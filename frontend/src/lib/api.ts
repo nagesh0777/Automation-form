@@ -2,7 +2,7 @@ import axios from 'axios'
 import type { AuthResponse, ReportRequest, ReportResponse } from '../types/report'
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8080/api',
+  baseURL: import.meta.env.VITE_API_URL || '/api',
 })
 
 const LOCAL_KEY = 'pod_reports_local_v1'
