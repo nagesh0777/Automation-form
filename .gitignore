@@ -1,0 +1,15 @@
+# general
+node_modules/
+*.log
+
+# frontend
+frontend/dist/
+
+# backend
+backend/target/
+
+# env
+.env
+
+# keys
+*.pem

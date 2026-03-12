@@ -1,0 +1,14 @@
+import { cn } from './utils'
+import type { TextareaHTMLAttributes } from 'react'
+
+export function Textarea({ className, ...props }: TextareaHTMLAttributes<HTMLTextAreaElement>) {
+  return (
+    <textarea
+      className={cn(
+        'w-full px-3 py-2 rounded-xl border border-slate-300/90 bg-white/95 min-h-24 shadow-inner',
+        className
+      )}
+      {...props}
+    />
+  )
+}
